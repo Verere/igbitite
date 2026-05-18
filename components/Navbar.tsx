@@ -25,7 +25,7 @@ export default function Navbar() {
         scrolled ? 'bg-navy/90 shadow-lg backdrop-blur' : 'bg-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <div className="max-w-7xl mx-auto flex items-center bg-black justify-between px-6 py-4">
         <a href="#hero" className="flex items-center gap-2">
           <img src="/logo.jpg" alt="Igbtite Logo" className="w-12 h-12" />
         </a>
@@ -42,7 +42,7 @@ export default function Navbar() {
           ))}
         </div>
         <button
-          className="md:hidden p-2 rounded-lg bg-blue-500 text-white hover:bg-electric/10 focus:outline-none"
+          className="md:hidden p-2 rounded-lg  text-white hover:bg-electric/10 focus:outline-none"
           onClick={() => setOpen((v) => !v)}
           aria-label="Toggle menu"
         >
@@ -56,7 +56,7 @@ export default function Navbar() {
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: -40, opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="md:hidden bg-navy/95 backdrop-blur flex flex-col gap-6 px-8 py-8 shadow-2xl rounded-b-2xl"
+            className="md:hidden backdrop-blur flex flex-col gap-6 px-8 py-8 text-bold text-white shadow-2xl rounded-b-2xl"
           >
             {navLinks.map((link) => (
               <a

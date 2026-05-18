@@ -42,7 +42,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="relative py-24 px-6 bg-white">
+    <section id="contact" className="relative py-24 px-6 bg-black text-white">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 rounded-2xl shadow-soft bg-light/80 backdrop-blur-lg">
         <div className="p-8 flex flex-col gap-6">
           <motion.h2

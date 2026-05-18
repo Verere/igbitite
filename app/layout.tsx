@@ -35,8 +35,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${montserrat.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col bg-navy text-white font-sans">{children}</body>
+    <html lang="en" 
+    >
+      <body
+      className={`${inter.variable} ${montserrat.variable} h-full antialiased`}
+       >{children}</body>
     </html>
   );
 }

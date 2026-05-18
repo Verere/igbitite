@@ -4,9 +4,19 @@ import Image from 'next/image';
 
 export default function HeroSection() {
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-navy via-electric to-light overflow-hidden">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center bg-black/95 text-white bg-gradient-to-br from-navy via-electric to-light overflow-hidden">
+      {/* Hero background image */}
+      <div className="absolute inset-0 w-full h-full z-0">
+        <Image
+          src="/hero.png"
+          alt="Hero background"
+          fill
+          className="object-cover object-center opacity-40"
+          priority
+        />
+      </div>
       {/* Animated background grid or gradient */}
-      <div className="absolute inset-0 pointer-events-none">
+      <div className="absolute inset-0 pointer-events-none z-10">
         <svg className="w-full h-full opacity-10" viewBox="0 0 100 100" fill="none">
           <defs>
             <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
@@ -16,12 +26,12 @@ export default function HeroSection() {
           <rect width="100%" height="100%" fill="url(#grid)" />
         </svg>
       </div>
-      <div className="relative z-10 w-full max-w-5xl mx-auto px-6 py-24 flex flex-col items-center text-center gap-8">
+      <div className="relative z-20 w-full max-w-5xl mx-auto px-6 py-24 flex flex-col items-center text-center gap-8">
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
-          className="text-4xl md:text-6xl font-heading font-extrabold text-blue-500 drop-shadow-lg"
+          className="text-4xl md:text-6xl font-heading font-extrabold text-navy drop-shadow-lg"
         >
           Engineering Innovative Power, Infrastructure & Smart Technology Solutions
         </motion.h1>
@@ -39,10 +49,10 @@ export default function HeroSection() {
           transition={{ duration: 1.1 }}
           className="flex flex-col sm:flex-row gap-4 mt-6 w-full sm:justify-center"
         >
-          <a href="#contact" className="px-8 py-4 rounded-2xl bg-electric text-white font-bold text-lg shadow-soft hover:scale-105 hover:bg-gradient-to-r hover:from-electric hover:to-navy transition-all duration-200">
+          <a href="#contact" className="px-8 py-4  rounded-2xl bg-electric text-white font-bold text-lg shadow-soft hover:scale-105 hover:bg-gradient-to-r hover:from-electric hover:to-navy transition-all duration-200">
             Request Consultation
           </a>
-          <a href="#services" className="px-8 py-4 rounded-2xl bg-white text-electric font-bold text-lg shadow-soft hover:scale-105 hover:bg-light hover:text-navy transition-all duration-200">
+          <a href="#services" className="px-8 py-4 rounded-2xl bg-white text-black font-bold text-lg shadow-soft hover:scale-105 hover:bg-light hover:text-navy transition-all duration-200">
             Explore Services
           </a>
         </motion.div>
@@ -53,7 +63,7 @@ export default function HeroSection() {
           className="mt-12 flex justify-center"
         >
           <Image
-            src="/globe.svg"
+            src="/logo.jpg"
             alt="Engineering Illustration"
             width={320}
             height={220}
