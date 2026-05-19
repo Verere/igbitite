@@ -67,25 +67,35 @@ export default function ContactSection() {
           >
             <MessageCircle size={30} /> WhatsApp Us
           </a>
-          <div className="mt-8 w-full h-48 bg-black rounded-2xl flex items-center justify-center text-navy/40 text-lg font-semibold">
-            Google Maps Placeholder
+          <div className="mt-8 w-full h-48 rounded-2xl overflow-hidden flex items-center justify-center">
+            <iframe
+              title="Google Map location of Igbitite Engineering"
+              src="https://www.google.com/maps?q=1+Igborigbo+quaters,+Sokebolou/Yokiri+Federated+Communities,+Ogulagha+Kingdom,+Delta+State,+Nigeria&output=embed"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="w-full h-full"
+            ></iframe>
           </div>
         </div>
         <form
-          className="p-8 flex flex-col gap-4 bg-black rounded-2xl shadow-lg border border-navy/10"
+          className="p-8 flex flex-col gap-4 bg-black text-white rounded-2xl shadow-lg border border-navy/10"
           onSubmit={handleSubmit}
         >
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <input name="name" value={form.name} onChange={handleChange} placeholder="Name*" className="input" required />
-            <input name="email" value={form.email} onChange={handleChange} placeholder="Email*" className="input" required type="email" />
-            <input name="company" value={form.company} onChange={handleChange} placeholder="Company" className="input" />
-            <input name="phone" value={form.phone} onChange={handleChange} placeholder="Phone" className="input" />
+          <div className="grid grid-cols-1  gap-4 ">
+            <input name="name" value={form.name} onChange={handleChange} placeholder="Name*" className="input border border-white py-2 px-4 mb-2 md:mb-1 rounded-2xl" required />
+            <input name="email" value={form.email} onChange={handleChange} placeholder="Email*" className="input border border-white py-2 px-4 mb-2 rounded-2xl" required type="email" />
+            <input name="company" value={form.company} onChange={handleChange} placeholder="Company" className="input border border-white py-2 px-4 mb-2 rounded-2xl" />
+            <input name="phone" value={form.phone} onChange={handleChange} placeholder="Phone" className="input border border-white py-2 px-4 mb-2 rounded-2xl" />
           </div>
-          <textarea name="message" value={form.message} onChange={handleChange} placeholder="Message*" className="input min-h-[100px]" required />
+          <textarea name="message" value={form.message} onChange={handleChange} placeholder="Message*" className="input min-h-[100px] border border-white py-2 px-4 rounded-2xl" required />
           {error && <div className="text-red-600 text-sm font-semibold">{error}</div>}
           <button
             type="submit"
-            className="mt-2 px-8 py-4 rounded-2xl bg-electric text-white font-bold text-lg shadow-soft hover:scale-105 hover:bg-gradient-to-r hover:from-electric hover:to-navy transition-all duration-200 disabled:opacity-60"
+            className="mt-2 px-8 py-4 border border-white rounded-2xl bg-electric text-white font-bold text-lg shadow-soft hover:scale-105 hover:bg-gradient-to-r hover:from-electric hover:to-navy transition-all duration-200 disabled:opacity-60"
             disabled={status === 'loading'}
           >
             {status === 'loading' ? 'Sending...' : status === 'success' ? 'Message Sent!' : 'Send Message'}

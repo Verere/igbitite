@@ -67,7 +67,7 @@ export default function Footer() {
           />
           <button type="submit" className="bg-electric text-white rounded-2xl px-4 py-2 flex items-center gap-1 hover:bg-white hover:text-electric transition-colors"><Send size={16} />Subscribe</button>
         </form>
-        <span className="text-white/50 text-xs">&copy; {new Date().getFullYear()} Igbitite. All rights reserved.</span>
+        <span className="text-white/50 text-xs">&copy; {new Date().getFullYear()} Igbetite. All rights reserved.</span>
       </div>
     </footer>
   );
