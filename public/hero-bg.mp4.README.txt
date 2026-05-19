@@ -1,0 +1,2 @@
+// Place your cinematic background video in the public directory as /hero-bg.mp4
+// This is a placeholder README for video licensing and credits if needed.

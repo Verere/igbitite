@@ -35,10 +35,24 @@ export default function ContactSection() {
       return;
     }
     setStatus('loading');
-    setTimeout(() => {
-      setStatus('success');
-      setForm(initialForm);
-    }, 1200);
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      });
+      const data = await res.json();
+      if (data.success) {
+        setStatus('success');
+        setForm(initialForm);
+      } else {
+        setStatus('error');
+        setError(data.error || 'Failed to send message.');
+      }
+    } catch (err: any) {
+      setStatus('error');
+      setError(err.message || 'Failed to send message.');
+    }
   };
 
   return (

@@ -5,15 +5,20 @@ import Image from 'next/image';
 export default function HeroSection() {
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center bg-black/95 text-white bg-gradient-to-br from-navy via-electric to-light overflow-hidden">
-      {/* Hero background image */}
+      {/* Hero background video */}
       <div className="absolute inset-0 w-full h-full z-0">
-        <Image
-          src="/hero.png"
-          alt="Hero background"
-          fill
-          className="object-cover object-center opacity-40"
-          priority
-        />
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="object-cover object-center w-full h-full opacity-60"
+          poster="/hero.png"
+        >
+          <source src="/hero.mp4" type="video/mp4" />
+          {/* Fallback to image if video not supported */}
+          Your browser does not support the video tag.
+        </video>
       </div>
       {/* Animated background grid or gradient */}
       <div className="absolute inset-0 pointer-events-none z-10">

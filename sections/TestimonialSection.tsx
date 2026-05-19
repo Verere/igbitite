@@ -12,8 +12,8 @@ const testimonials = [
   {
     name: 'Chinedu Okafor',
     company: 'IndustriTech Ltd.',
-    quote: 'The automation solutions provided by Igbetite transformed our manufacturing process. Highly recommended!',
-    avatar: '/next.svg',
+    quote: 'Their automation solutions completely transformed our manufacturing operations, improving efficiency, reducing downtime, and increasing overall productivity. We highly recommend them.',
+    avatar: '/man.jpg',
     rating: 5,
   },
   {
