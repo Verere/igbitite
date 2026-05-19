@@ -55,7 +55,7 @@ export default function ContactSection() {
             Contact Us
           </motion.h2>
           <div className="flex flex-col gap-3 text-navy/90">
-            <div className="flex items-center gap-3"><Phone className="text-electric" /> +234 701 219 8640  +234 8063852343</div>
+            <div className="flex items-center gap-3"><Phone className="text-electric" /> +234 701 219 8640 | +234 806 385 2343</div>
             <div className="flex items-center gap-3"><Mail className="text-electric" /> oyateide@igbetiteengineering.com</div>
             <div className="flex items-center gap-3"><MapPin className="text-electric" /> 1 Igborigbo quaters, Sokebolou/Yokiri Federated Communities, Ogulagha Kingdom, Delta State, Nigeria</div>
           </div>
