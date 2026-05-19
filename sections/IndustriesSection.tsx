@@ -61,7 +61,7 @@ export default function IndustriesSection() {
               <div className="mb-4 flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-electric/80 to-navy/80 shadow-lg group-hover:shadow-2xl transition-all duration-300">
                 <industry.icon size={36} className="text-white drop-shadow-glow" />
               </div>
-              <h3 className="text-xl font-bold text-navy mb-2">{industry.name}</h3>
+              <h3 className="text-xl font-bold text-black mb-2">{industry.name}</h3>
               <p className="text-navy/80 mb-2">{industry.description}</p>
               <div className="absolute inset-0 pointer-events-none rounded-2xl border border-gradient-to-br from-electric/40 to-navy/20 opacity-0 group-hover:opacity-100 transition-all duration-300" />
             </motion.div>

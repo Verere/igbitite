@@ -42,7 +42,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="relative py-24 px-6 bg-black text-white">
+    <section id="contact" className="relative py-24 px-6 bg-white text-black">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 rounded-2xl shadow-soft bg-light/80 backdrop-blur-lg">
         <div className="p-8 flex flex-col gap-6">
           <motion.h2
@@ -55,24 +55,24 @@ export default function ContactSection() {
             Contact Us
           </motion.h2>
           <div className="flex flex-col gap-3 text-navy/90">
-            <div className="flex items-center gap-3"><Phone className="text-electric" /> +234 800 000 0000</div>
-            <div className="flex items-center gap-3"><Mail className="text-electric" /> info@igbitite.com</div>
-            <div className="flex items-center gap-3"><MapPin className="text-electric" /> Lagos, Nigeria</div>
+            <div className="flex items-center gap-3"><Phone className="text-electric" /> +234 701 219 8640  +234 8063852343</div>
+            <div className="flex items-center gap-3"><Mail className="text-electric" /> oyateide@igbetiteengineering.com</div>
+            <div className="flex items-center gap-3"><MapPin className="text-electric" /> 1 Igborigbo quaters, Sokebolou/Yokiri Federated Communities, Ogulagha Kingdom, Delta State, Nigeria</div>
           </div>
           <a
-            href="https://wa.me/2348000000000"
+            href="https://wa.me/2347012198640"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-6 inline-flex items-center gap-2 px-6 py-3 rounded-2xl bg-gradient-to-r from-electric to-navy text-white font-bold shadow-soft hover:scale-105 transition-all duration-200"
+            className="mt-4 inline-flex items-center gap-2 px-6 py-3 rounded-2xl bg-gradient-to-r from-electric to-navy text-black font-bold shadow-soft hover:scale-105 transition-all duration-200"
           >
-            <MessageCircle size={20} /> WhatsApp Us
+            <MessageCircle size={30} /> WhatsApp Us
           </a>
-          <div className="mt-8 w-full h-48 bg-navy/10 rounded-2xl flex items-center justify-center text-navy/40 text-lg font-semibold">
+          <div className="mt-8 w-full h-48 bg-black rounded-2xl flex items-center justify-center text-navy/40 text-lg font-semibold">
             Google Maps Placeholder
           </div>
         </div>
         <form
-          className="p-8 flex flex-col gap-4 bg-white rounded-2xl shadow-lg border border-navy/10"
+          className="p-8 flex flex-col gap-4 bg-black rounded-2xl shadow-lg border border-navy/10"
           onSubmit={handleSubmit}
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

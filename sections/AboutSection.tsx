@@ -39,7 +39,7 @@ export default function AboutSection() {
             <span className="text-navy/80">To be the leading provider of smart infrastructure and engineering excellence in Africa.</span>
           </div>
         </div>
-        <div className="p-8 grid grid-cols-2 gap-6">
+        <div className="p-8 grid grid-cols-2 gap-6 text-black">
           {stats.map((stat, i) => (
             <motion.div
               key={stat.label}
@@ -47,7 +47,7 @@ export default function AboutSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 + i * 0.2 }}
               viewport={{ once: true }}
-              className="rounded-2xl bg-gradient-to-br from-navy/90 to-electric/80 text-white shadow-lg p-6 flex flex-col items-center justify-center glassmorphism border border-white/10"
+              className="rounded-2xl bg-gradient-to-br from-navy/90 to-electric/80 text-black shadow-lg p-6 flex flex-col items-center justify-center glassmorphism border border-white/10"
             >
               <span className="text-3xl md:text-4xl font-extrabold mb-1">
                 {typeof stat.value === 'number' ? (

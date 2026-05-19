@@ -20,7 +20,7 @@ const testimonials = [
     name: 'Fatima Bello',
     company: 'UrbanBuild Co.',
     quote: 'From design to delivery, the Igbitite team was responsive and innovative. We look forward to more projects together.',
-    avatar: '/globe.svg',
+    avatar: '/logo.jpg',
     rating: 4,
   },
 ];
@@ -37,14 +37,14 @@ function StarRating({ rating }: { rating: number }) {
 
 export default function TestimonialSection() {
   return (
-    <section id="testimonials" className="relative py-24 px-6 bg-light">
+    <section id="testimonials" className="relative py-24 px-6 bg-black text-white">
       <div className="max-w-5xl mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-3xl md:text-4xl font-heading font-bold text-navy text-center mb-12"
+          className="text-3xl md:text-4xl font-heading font-bold text-white text-center mb-12"
         >
           What Our Clients Say
         </motion.h2>
@@ -63,7 +63,7 @@ export default function TestimonialSection() {
                 alt={t.name}
                 className="w-16 h-16 rounded-full mb-4 object-cover border-4 border-electric/30 shadow-lg"
               />
-              <p className="text-navy/90 text-lg mb-4 font-medium">“{t.quote}”</p>
+              <p className="text-black text-lg mb-4 font-medium">“{t.quote}”</p>
               <span className="font-bold text-navy text-base">{t.name}</span>
               <span className="text-electric text-sm mb-2">{t.company}</span>
               <StarRating rating={t.rating} />

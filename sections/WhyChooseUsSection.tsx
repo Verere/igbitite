@@ -13,7 +13,7 @@ const features = [
 
 export default function WhyChooseUsSection() {
   return (
-    <section id="whychooseus" className="relative py-24 px-6 bg-navy">
+    <section id="whychooseus" className="relative py-24 px-6 bg-black text-white">
       <div className="max-w-6xl mx-auto rounded-2xl bg-gradient-to-br from-navy to-electric/60 shadow-2xl p-12 flex flex-col items-center">
         <motion.h2
           initial={{ opacity: 0, y: 40 }}
