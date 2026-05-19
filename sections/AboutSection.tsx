@@ -30,8 +30,15 @@ export default function AboutSection() {
             viewport={{ once: true }}
             className="text-lg text-navy/90"
           >
-            We are a multidisciplinary engineering company delivering electrical, automation, infrastructure, and sustainable technology solutions across Nigeria and beyond.
-          </motion.p>
+Igbetite Engineering Limited is a forward-thinking engineering and infrastructure company dedicated to delivering innovative, reliable, and sustainable solutions across various industries. The company specializes in electrical engineering services, including the design, testing, installation, and maintenance of electrical systems for sectors such as power generation, telecommunications, manufacturing, and construction.
+
+With a strong commitment to innovation and technical excellence, Igbetite Engineering Limited also develops and manufactures electrical systems, machinery, and components for commercial and residential applications. The company actively invests in research and development, focusing on renewable energy, energy efficiency, automation systems, smart grids, and Internet of Things (IoT) technologies to support modern industrial advancement.
+
+In addition, the company provides engineering consultancy, prototyping, sourcing support, maintenance, validation, and after-market support services to businesses in Nigeria and internationally. Its expertise extends to embedded systems, plant and manufacturing engineering, and electrical and electronics hardware and software solutions.
+
+Beyond engineering, Igbetite Engineering Limited is involved in construction, property development, and infrastructure projects, including land development, building construction, renovation, and estate management. Through professionalism, innovation, and quality service delivery, the company continues to position itself as a trusted partner in engineering, technology, and sustainable development.
+        </motion.p>
+
           <div className="flex flex-col gap-2 mt-4">
             <span className="font-bold text-electric">Mission:</span>
             <span className="text-navy/80">To empower businesses and communities with innovative, reliable, and sustainable engineering solutions.</span>
