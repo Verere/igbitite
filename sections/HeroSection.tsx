@@ -33,7 +33,7 @@ export default function HeroSection() {
           transition={{ duration: 0.7 }}
           className="text-4xl md:text-6xl font-heading font-extrabold text-navy drop-shadow-lg"
         >
-          Engineering Innovative Power, Infrastructure & Smart Technology Solutions
+          Integrated Electrical, Mechanical & Civil Engineering Solutions.
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 40 }}
@@ -41,7 +41,7 @@ export default function HeroSection() {
           transition={{ duration: 0.9 }}
           className="max-w-2xl text-lg md:text-2xl text-light font-medium"
         >
-          We provide electrical engineering, automation, renewable energy, construction, and infrastructure solutions for businesses, industries, and real estate developments.
+          We delivers integrated electrical, mechanical, and civil engineering solutions, with expertise in automation, renewable energy, construction, and infrastructure development for commercial, industrial, and real estate projects.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 40 }}

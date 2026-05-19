@@ -30,20 +30,18 @@ export default function AboutSection() {
             viewport={{ once: true }}
             className="text-lg text-navy/90"
           >
-Igbetite Engineering Limited is a forward-thinking engineering and infrastructure company dedicated to delivering innovative, reliable, and sustainable solutions across various industries. The company specializes in electrical engineering services, including the design, testing, installation, and maintenance of electrical systems for sectors such as power generation, telecommunications, manufacturing, and construction.
+Igbetite Engineering Limited is a multidisciplinary engineering and infrastructure company delivering innovative electrical, mechanical, and civil engineering solutions tailored to modern industrial and commercial needs. We specialize in power systems, automation, renewable energy, smart technologies, construction, and infrastructure development, providing reliable services for businesses, industries, and real estate projects.
 
-With a strong commitment to innovation and technical excellence, Igbetite Engineering Limited also develops and manufactures electrical systems, machinery, and components for commercial and residential applications. The company actively invests in research and development, focusing on renewable energy, energy efficiency, automation systems, smart grids, and Internet of Things (IoT) technologies to support modern industrial advancement.
+Driven by innovation and excellence, we combine advanced engineering expertise with sustainable practices to design, develop, install, and maintain efficient systems that improve productivity and long-term performance. Our capabilities extend across embedded systems, manufacturing support, smart grid technologies, IoT solutions, and engineering consultancy, enabling us to provide end-to-end technical solutions for diverse sectors.
 
-In addition, the company provides engineering consultancy, prototyping, sourcing support, maintenance, validation, and after-market support services to businesses in Nigeria and internationally. Its expertise extends to embedded systems, plant and manufacturing engineering, and electrical and electronics hardware and software solutions.
-
-Beyond engineering, Igbetite Engineering Limited is involved in construction, property development, and infrastructure projects, including land development, building construction, renovation, and estate management. Through professionalism, innovation, and quality service delivery, the company continues to position itself as a trusted partner in engineering, technology, and sustainable development.
-        </motion.p>
+At Igbetite Engineering Limited, we are committed to quality, professionalism, and customer satisfaction, delivering projects that meet global standards while contributing to sustainable growth and technological advancement in Nigeria and beyond.
+   </motion.p>
 
           <div className="flex flex-col gap-2 mt-4">
             <span className="font-bold text-electric">Mission:</span>
-            <span className="text-navy/80">To empower businesses and communities with innovative, reliable, and sustainable engineering solutions.</span>
+            <span className="text-navy/80">To deliver innovative, reliable, and sustainable electrical, mechanical, and civil engineering solutions that empower industries, businesses, and communities through advanced technology, quality construction, renewable energy, and smart infrastructure development while maintaining the highest standards of professionalism, safety, and customer satisfaction.</span>
             <span className="font-bold text-electric mt-2">Vision:</span>
-            <span className="text-navy/80">To be the leading provider of smart infrastructure and engineering excellence in Africa.</span>
+            <span className="text-navy/80">To become a leading engineering and infrastructure company in Africa, recognized for transforming industries and communities through cutting-edge technology, sustainable energy solutions, smart infrastructure, and excellence in engineering innovation.</span>
           </div>
         </div>
         <div className="p-8 grid grid-cols-2 gap-6 text-black">
