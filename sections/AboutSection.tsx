@@ -11,7 +11,7 @@ const stats = [
 
 export default function AboutSection() {
   return (
-    <section id="about" className="relative bg-light py-24 px-6 md:px-0">
+    <section id="about" className="relative bg-light py-24 px-6 md:px-0 text-black">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center rounded-2xl shadow-soft bg-white/80 backdrop-blur-lg">
         <div className="p-8 flex flex-col gap-6">
           <motion.h2

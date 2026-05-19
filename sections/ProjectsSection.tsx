@@ -5,25 +5,25 @@ const projects = [
   {
     title: 'Smart Grid Installation',
     description: 'Deployment of advanced smart grid technology for efficient power distribution.',
-    image: '/file.svg',
+    image: '/plant.jpg',
     category: 'Energy',
   },
   {
     title: 'Industrial Electrical System',
     description: 'Design and commissioning of industrial electrical systems for manufacturing.',
-    image: '/factory.svg',
+    image: '/manuf.jpg',
     category: 'Manufacturing',
   },
   {
     title: 'Solar Power Deployment',
     description: 'Large-scale solar power installation for commercial and estate developments.',
-    image: '/globe.svg',
+    image: '/solar.jpg',
     category: 'Renewable',
   },
   {
     title: 'Commercial Infrastructure Project',
     description: 'Turnkey construction and infrastructure for a major commercial complex.',
-    image: '/building.svg',
+    image: '/real.jpg',
     category: 'Construction',
   },
 ];
@@ -49,15 +49,15 @@ export default function ProjectsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 + i * 0.1 }}
               viewport={{ once: true }}
-              className="group rounded-2xl bg-light border border-navy/10 shadow-soft p-0 overflow-hidden hover:scale-105 hover:shadow-2xl transition-all duration-300 glassmorphism relative"
+              className="group rounded-2xl bg-light text-black border border-navy/10 shadow-soft p-0 overflow-hidden hover:scale-105 hover:shadow-2xl transition-all duration-300 glassmorphism relative"
             >
               <div className="relative w-full h-56 bg-gradient-to-br from-navy/80 to-electric/60 flex items-center justify-center">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="object-contain w-32 h-32 drop-shadow-xl opacity-90 group-hover:scale-110 transition-transform duration-300"
+                  className="object-contain w-full h-32 drop-shadow-xl opacity-90 group-hover:scale-110 transition-transform duration-300"
                 />
-                <span className="absolute top-4 left-4 bg-electric text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
+                <span className="absolute top-4 left-4 bg-electric text-black text-xs font-bold px-3 py-1 rounded-full shadow-md">
                   {project.category}
                 </span>
               </div>

@@ -59,7 +59,7 @@ export default function IndustriesSection() {
               className="group rounded-2xl bg-white border border-navy/10 shadow-soft p-8 flex flex-col items-center text-center hover:scale-105 hover:shadow-xl transition-all duration-300 glassmorphism relative overflow-hidden"
             >
               <div className="mb-4 flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-electric/80 to-navy/80 shadow-lg group-hover:shadow-2xl transition-all duration-300">
-                <industry.icon size={36} className="text-white drop-shadow-glow" />
+                <industry.icon size={36} className="text-black drop-shadow-glow" />
               </div>
               <h3 className="text-xl font-bold text-black mb-2">{industry.name}</h3>
               <p className="text-navy/80 mb-2">{industry.description}</p>
