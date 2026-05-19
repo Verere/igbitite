@@ -13,6 +13,9 @@ const quickLinks = [
 
 const servicesLinks = [
   'Electrical Engineering',
+  'Mechanical Engineering',
+  'Civil Engineering',
+  'Power Systems',
   'Renewable Energy',
   'Automation & IoT',
   'Consultancy',

@@ -12,15 +12,15 @@ const testimonials = [
   {
     name: 'Chinedu Okafor',
     company: 'IndustriTech Ltd.',
-    quote: 'The automation solutions provided by Igbitite transformed our manufacturing process. Highly recommended!',
+    quote: 'The automation solutions provided by Igbetite transformed our manufacturing process. Highly recommended!',
     avatar: '/next.svg',
     rating: 5,
   },
   {
     name: 'Fatima Bello',
     company: 'UrbanBuild Co.',
-    quote: 'From design to delivery, the Igbitite team was responsive and innovative. We look forward to more projects together.',
-    avatar: '/logo.jpg',
+    quote: 'From design to delivery, the Igbetite team was responsive and innovative. We look forward to more projects together.',
+    avatar: '/girl.jpg',
     rating: 4,
   },
 ];
