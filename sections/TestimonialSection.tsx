@@ -5,7 +5,7 @@ const testimonials = [
   {
     name: 'Adeola Johnson',
     company: 'GreenGrid Energy',
-    quote: 'Igbetite delivered our solar project on time and exceeded our expectations. Their professionalism and technical expertise are unmatched.',
+    quote: 'Igbetite handled our Hybrid Solar–Gas Turbine Power Generation System and exceeded our expectations. Their professionalism and technical expertise are unmatched.',
     avatar: '/igbi2.jpg',
     rating: 5,
   },
