@@ -9,6 +9,11 @@ const services = [
     description: 'Electrical design, power installation, testing & commissioning.',
   },
   {
+    icon: Wrench,
+    title: 'Mechanical Engineering',
+    description: 'Manufacturing & Technical Services, Prototyping,  equipment support.',
+  },
+  {
     icon: Leaf,
     title: 'Renewable Energy Solutions',
     description: 'Solar systems, energy efficiency, sustainable power.',
@@ -23,11 +28,7 @@ const services = [
     title: 'Engineering Consultancy',
     description: 'Design consulting, technical advisory, project management.',
   },
-  {
-    icon: Wrench,
-    title: 'Manufacturing & Technical Services',
-    description: 'Prototyping, mechanical engineering, equipment support.',
-  },
+  
   {
     icon: Building2,
     title: 'Construction & Infrastructure',
