@@ -54,10 +54,10 @@ export default function HeroSection() {
           transition={{ duration: 1.1 }}
           className="flex flex-col sm:flex-row gap-4 mt-6 w-full sm:justify-center"
         >
-          <a href="#contact" className="px-8 py-4  rounded-2xl bg-electric text-white font-bold text-lg shadow-soft hover:scale-105 hover:bg-gradient-to-r hover:from-electric hover:to-navy transition-all duration-200">
+          <a href="#contact" className="px-8 py-4  rounded-2xl bg-[#00AEEF] text-white font-bold text-lg shadow-soft hover:scale-105 hover:bg-gradient-to-r hover:from-[#00AEEF] hover:to-[#0A192F] transition-all duration-200">
             Request Consultation
           </a>
-          <a href="#services" className="px-8 py-4 rounded-2xl bg-white text-black font-bold text-lg shadow-soft hover:scale-105 hover:bg-light hover:text-navy transition-all duration-200">
+          <a href="#services" className="px-8 py-4 rounded-2xl bg-white text-black font-bold text-lg shadow-soft hover:scale-105 hover:bg-[#F8FAFC] hover:text-[#0A192F] transition-all duration-200">
             Explore Services
           </a>
         </motion.div>

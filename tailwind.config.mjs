@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import colors from 'tailwindcss/colors';
+
 const config = {
   darkMode: 'class',
   content: [
@@ -12,17 +14,19 @@ const config = {
   theme: {
     extend: {
       colors: {
-        navy: '#0A192F',
-        electric: '#2563EB',
-        light: '#F3F6FB',
+        ...colors,
+        navy: '#0A192F', // deep navy
+        electric: '#00AEEF', // electric blue
+        dark: '#111827',
+        light: '#F8FAFC',
+        text: '#1F2937',
         accent: {
-          blue: '#2563EB',
-          gradient1: 'linear-gradient(90deg, #2563EB 0%, #0A192F 100%)',
+          blue: '#00AEEF',
         },
       },
       fontFamily: {
-        sans: ['Inter', 'Arial', 'sans-serif'],
-        heading: ['Montserrat', 'Arial', 'sans-serif'],
+        sans: ['Inter', 'Manrope', 'Arial', 'sans-serif'],
+        heading: ['Manrope', 'Inter', 'Arial', 'sans-serif'],
       },
       borderRadius: {
         '2xl': '1.5rem',

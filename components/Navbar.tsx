@@ -5,6 +5,7 @@ import Logo from '@/components/Logo';
 import { useScrollPosition } from '@/hooks/useScrollPosition';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
+import Image from 'next/image';
 
 const navLinks = [
   { name: 'Home', href: '#hero' },
@@ -21,28 +22,29 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? 'bg-navy/90 shadow-lg backdrop-blur' : 'bg-transparent'
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 font-heading ${
+        scrolled ? 'bg-[#0A192F]/95 shadow-xl backdrop-blur border-b border-[#0A192F]/40' : 'bg-transparent'
       }`}
+      aria-label="Main navigation"
     >
-      <div className="max-w-7xl mx-auto flex items-center bg-black justify-between px-6 py-4">
-        <a href="#hero" className="flex items-center gap-2">
-          <img src="/logo.jpg" alt="Igbtite Logo" className="w-12 h-12" />
+      <div className="max-w-7xl mx-auto flex items-center justify-between px-4 md:px-8 py-3 md:py-4">
+        <a href="#hero" className="flex items-center gap-3 group">
+          <Image src="/logo.jpg" alt="Igbtite Logo" width={48} height={48} className="w-12 h-12 rounded-xl shadow-lg border-2 border-electric group-hover:scale-105 transition-transform" priority />
         </a>
         <div className="hidden md:flex gap-8 items-center">
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
-              className="relative px-2 py-1 font-medium text-white hover:text-electric transition-colors duration-200 group"
+              className="relative px-2 py-1 font-semibold tracking-wide text-white hover:text-accent-blue transition-colors duration-200 group"
             >
               <span>{link.name}</span>
-              <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-gradient-to-r from-electric to-navy group-hover:w-full transition-all duration-300"></span>
+              <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-gradient-to-r from-accent-blue to-navy group-hover:w-full transition-all duration-300"></span>
             </a>
           ))}
         </div>
         <button
-          className="md:hidden p-2 rounded-lg  text-white hover:bg-electric/10 focus:outline-none"
+          className="md:hidden p-2 rounded-lg text-white hover:bg-[#00AEEF]/10 focus:outline-none border border-white/10"
           onClick={() => setOpen((v) => !v)}
           aria-label="Toggle menu"
         >
@@ -55,14 +57,14 @@ export default function Navbar() {
             initial={{ y: -40, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: -40, opacity: 0 }}
-            transition={{ duration: 0.2 }}
-            className="md:hidden backdrop-blur flex flex-col gap-6 px-8 py-8 text-bold text-white shadow-2xl rounded-b-2xl"
+            transition={{ duration: 0.22 }}
+            className="md:hidden backdrop-blur-lg bg-[#0A192F]/95 border-b border-[#00AEEF]/20 flex flex-col gap-6 px-8 py-8 text-bold text-white shadow-2xl rounded-b-2xl"
           >
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="text-lg font-semibold text-white hover:text-electric transition-colors duration-200"
+                className="text-lg font-semibold text-white hover:text-accent-blue transition-colors duration-200"
                 onClick={() => setOpen(false)}
               >
                 {link.name}
