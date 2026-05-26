@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Whatsapp } from "lucide-react";
+import { Mail, Phone, MapPin, MessageCircle } from "lucide-react";
 
 const offices = [
   {
@@ -56,7 +56,7 @@ export default function ContactPage() {
             ))}
           </div>
           {/* WhatsApp Button */}
-          <a href="https://wa.me/2347012198640" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 rounded-2xl bg-green-500 text-white font-bold text-lg shadow hover:bg-green-600 transition-all w-max mt-4"><Whatsapp size={22} /> WhatsApp Us</a>
+          <a href="https://wa.me/2347012198640" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 rounded-2xl bg-green-500 text-white font-bold text-lg shadow hover:bg-green-600 transition-all w-max mt-4"><MessageCircle size={22} /> WhatsApp Us</a>
           {/* Google Map Embed */}
           <div className="w-full h-64 rounded-2xl overflow-hidden border border-accent-blue/10 shadow">
             <iframe
