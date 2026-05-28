@@ -16,7 +16,7 @@ const timeline = [
 
 const leaders = [
   { name: 'Engr. Hitler O. Joseph ', title: 'Managing Director', img: '/igbi2.jpg' },
-  { name: 'Mrs Favour Oyateide', title: 'Technical Director', img: '/girl.jpg' },
+  { name: 'Mrs Favour Hitler', title: 'Technical Director', img: '/igbi5.png' },
 ];
 
 export default function AboutSection() {
